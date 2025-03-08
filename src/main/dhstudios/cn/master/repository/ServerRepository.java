@@ -1,6 +1,6 @@
 package main.dhstudios.cn.master.repository;
 
-import com.master.model.ServerStatusEntity;
+import main.dhstudios.master.model.ServerStatusEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

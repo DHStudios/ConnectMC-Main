@@ -7,6 +7,8 @@ public class ServerStatus {
     private long lastHeartbeat;
 
     public ServerStatus(String name, String ip, int players, long lastHeartbeat) {
+        // 虽然这里 Java 会隐式调用父类无参构造函数 Object()，但错误提示可能是 IDE 误判，这里显式调用以解决问题
+        super(); 
         this.name = name;
         this.ip = ip;
         this.players = players;
