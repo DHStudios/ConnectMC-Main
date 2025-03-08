@@ -5,6 +5,11 @@ public class HeartbeatRequest {
     private String serverIp;
     private int playersOnline;
 
+    // 显式定义默认构造函数
+    public HeartbeatRequest() {
+        super();
+    }
+
     // Getters & Setters
     public String getServerName() { return serverName; }
     public void setServerName(String serverName) { this.serverName = serverName; }
